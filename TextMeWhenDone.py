@@ -76,7 +76,7 @@ def TextMeWhenDone(phone_carrier, phone_10digits, gmail_address,
     server.login(gmail_address, gmail_APP_password)
     server.sendmail(FROM, TO, content)
     server.close()
-    print 'Successfully sent the SMS'
+    print('Successfully sent the SMS')
 
 
 if __name__ == '__main__':
@@ -87,7 +87,7 @@ if __name__ == '__main__':
         i = 0
         while i <= max_number:
             time.sleep(pause_time)
-            print i
+            print(i)
             i += 1
         # intentionally_fail = undefined
 
