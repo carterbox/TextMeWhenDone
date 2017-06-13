@@ -58,7 +58,7 @@ def TextMeWhenDone(phone_carrier, phone_10digits, gmail_address,
         endtime = time.strftime("%H:%M:%S on %m/%d/%Y", time.localtime())
         body = 'Process failed at '
         TEXT = (body + endtime + '\n' + error.__class__.__name__ + ': ' +
-                error.message)
+                str(error))
         SUBJECT = 'FAILURE'
 
     # Email parameters
